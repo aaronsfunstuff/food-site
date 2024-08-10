@@ -351,4 +351,60 @@ footer {
 .more-info ul li a:hover {
     color: #e6a1a1;
 }
+.dishes {
+    background-color: #fff;
+    padding: 2em 1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
 
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.dish {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dish h3 {
+    font-size: 1.5em;
+    margin: 0.5em 1em;
+    font-family: 'Playfair Display', serif;
+}
+
+.dish p {
+    font-size: 1em;
+    margin: 0 1em 1em;
+}
+.dish a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.dish a:hover img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.dish a:hover h3 {
+    color: #e6a1a1;
+    transition: color 0.3s ease;
+}
