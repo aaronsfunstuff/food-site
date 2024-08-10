@@ -59,3 +59,25 @@ document.addEventListener('DOMContentLoaded', () => {
             updatePagination();
         }
     });
+
+    nextPageBtn.addEventListener('click', () => {
+        const totalPages = Math.ceil(dishes.length / itemsPerPage);
+        if (currentPage < totalPages) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        if (email) {
+            messageDiv.textContent = `Thank you for subscribing with ${email}!`;
+            messageDiv.style.color = 'green';
+            form.reset();
+        } else {
+            messageDiv.textContent = 'Please enter a valid email address.';
+            messageDiv.style.color = 'red';
+        }
+    });
+});
