@@ -408,3 +408,64 @@ footer {
     color: #e6a1a1;
     transition: color 0.3s ease;
 }
+.about h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #A4C3B2; 
+    padding-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.4rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #A4C3B2;
+    font-size: 1.1rem;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
