@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Food Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Japanese Food Dictionary</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h2>Discover the Elegance of Japanese Cuisine</h2>
+                <p>Explore the rich and diverse world of Japanese food with our detailed dictionary and featured dishes. From sushi to ramen, immerse yourself in culinary excellence.</p>
+                <a href="dishes.html" class="btn">Explore Dishes</a>
+            </div>
+        </section>
+        <section class="featured-dishes">
+            <div class="container">
+                <h2>Featured Dishes</h2>
+                <div class="dish-grid">
+                    <div class="dish">
+                        <img src="images/sushi.jpg" alt="Sushi">
+                        <h3>Sushi</h3>
+                        <p>Vinegared rice paired with fresh fish, vegetables, or other ingredients, showcasing the art of Japanese culinary tradition.</p>
+                    </div>
+                    <div class="dish">
+                        <img src="images/ramen.jpg" alt="Ramen">
+                        <h3>Ramen</h3>
+                        <p>A comforting noodle soup with a savory broth, complemented by tender noodles and a variety of toppings.</p>
+                    </div>
+                    <div class="dish">
+                        <img src="images/tempura.jpg" alt="Tempura">
+                        <h3>Tempura</h3>
+                        <p>Lightly battered and deep-fried seafood or vegetables, highlighting the delicate balance of texture and flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dictionary">
+            <div class="container">
+                <h2>Dish Dictionary</h2>
+                <input type="text" id="search" placeholder="Search for a dish...">
+                <div id="dictionary-list">
+                </div>
+                <div class="pagination">
+                    <button id="prev-page" class="btn" disabled>Previous</button>
+                    <span id="page-info">Page 1</span>
+                    <button id="next-page" class="btn">Next</button>
+                </div>
+            </div>
+        </section>
