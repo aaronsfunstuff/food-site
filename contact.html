@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Japanese Food Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Japanese Food Dictionary</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have questions, suggestions, or feedback, feel free to get in touch using the contact form below or through our contact details.</p>
+                
+                <div class="contact-grid">
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Our Contact Information</h3>
+                        <p>If you prefer, you can also reach us through the following contact details:</p>
+                        <ul class="contact-details">
+                            <li><strong>Email:</strong> <a href="mailto:info@japanesefooddictionary.com">info@japanesefooddictionary.com</a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                            <li><strong>Address:</strong> 123 Culinary Lane, Tokyo, Japan</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <h3>Find Us Here</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.235817744373!2d139.71006531549468!3d35.68948758018948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f7a89639f%3A0x8c1db1ed2f04e4a4!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sus!4v1657726785631!5m2!1sen!2sus" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Japanese Food Dictionary. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
